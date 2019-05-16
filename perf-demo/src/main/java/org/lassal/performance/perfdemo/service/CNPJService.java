@@ -33,8 +33,6 @@ public class CNPJService {
         String cnpj = this.addDigitoVerificador(cnpjIn);
         cnpj = this.addDigitoVerificador(cnpj);
 
-        System.out.println(cnpj);
-
         return raizCNPJ + "-" + cnpj.substring(12,14);
     }
 

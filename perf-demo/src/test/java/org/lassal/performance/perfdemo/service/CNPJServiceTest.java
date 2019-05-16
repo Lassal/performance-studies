@@ -19,4 +19,24 @@ public class CNPJServiceTest {
         assertEquals(expectedCnpj, actualCnpj);
 
     }
+
+    @Test
+    public void calculaDV10kTimes() throws Exception {
+
+        String raizCnpj = "14.572.457.0001";
+
+        CNPJService cnpjService = new CNPJService();
+
+        long start = System.nanoTime();
+
+        for(int i=0; i< 100000; i++){
+            cnpjService.calculaDigitoVerificador(raizCnpj);
+        }
+
+        long end = System.nanoTime();
+
+        double duration = ((double) end - (double) start) / 1000000000.00;
+
+        System.out.println("Tempo decorrido: " + duration);
+    }
 }
