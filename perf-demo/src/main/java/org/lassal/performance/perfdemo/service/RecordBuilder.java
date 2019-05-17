@@ -14,7 +14,7 @@ public class RecordBuilder {
     public PKOnlyTableRecord createTableRecord(){
 
         PKOnlyTableRecord rec = new PKOnlyTableRecord();
-        rec.setField1(this.getRandomString(13));
+        rec.setField1(this.getRandomString(20));
         rec.setField2(111222333444555666L);
         rec.setField3(new Date());
         rec.setField4(this.getRandomString(15));

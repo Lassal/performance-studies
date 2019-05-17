@@ -4,7 +4,7 @@ import javax.persistence.*;
 import java.util.Date;
 
 @Entity
-@Table(name = "PKOnlyTable")
+@Table(name = "TB_PKONLY")
 public class PKOnlyTableRecord extends SimpleRecord {
 
     @Id

@@ -1,7 +1,9 @@
 package org.lassal.performance.perfdemo.domain;
 
+import javax.persistence.MappedSuperclass;
 import java.util.Date;
 
+@MappedSuperclass
 public class SimpleRecord {
 
     protected String field1;

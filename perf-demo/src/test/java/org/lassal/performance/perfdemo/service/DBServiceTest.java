@@ -5,6 +5,7 @@ import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.autoconfigure.orm.jpa.DataJpaTest;
 import org.springframework.boot.test.autoconfigure.orm.jpa.TestEntityManager;
+import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.context.annotation.ComponentScan;
 import org.springframework.test.context.junit4.SpringRunner;
 
@@ -13,11 +14,8 @@ import static org.junit.Assert.*;
 
 @RunWith(SpringRunner.class)
 @ComponentScan("org.lassal.performance.perfdemo.*")
-@DataJpaTest()
+@SpringBootTest
 public class DBServiceTest {
-
-    @Autowired
-    private TestEntityManager entityManager;
 
     @Autowired
     private DBService dbService;
@@ -37,13 +35,11 @@ public class DBServiceTest {
     }
 
     @Test
-    public void test10kInserts(){
+    public void test100kInserts(){
 
         long start = System.nanoTime();
 
-        for(int i=0; i < 100000; i++){
-            this.dbService.addNewRecordPKOnlyTable();
-        }
+        this.dbService.addRecordSetRecordPKOnlyTable(10000);
 
         long end = System.nanoTime();
 
