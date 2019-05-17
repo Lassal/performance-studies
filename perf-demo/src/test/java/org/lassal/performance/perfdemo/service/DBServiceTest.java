@@ -2,36 +2,53 @@ package org.lassal.performance.perfdemo.service;
 
 import org.junit.Test;
 import org.junit.runner.RunWith;
-import org.lassal.performance.perfdemo.domain.PKOnlyTableRecord;
-import org.lassal.performance.perfdemo.repository.PKOnlyTableRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.autoconfigure.orm.jpa.DataJpaTest;
 import org.springframework.boot.test.autoconfigure.orm.jpa.TestEntityManager;
+import org.springframework.context.annotation.ComponentScan;
 import org.springframework.test.context.junit4.SpringRunner;
 
-import java.util.Date;
+
 import static org.junit.Assert.*;
 
 @RunWith(SpringRunner.class)
-@DataJpaTest
+@ComponentScan("org.lassal.performance.perfdemo.*")
+@DataJpaTest()
 public class DBServiceTest {
 
     @Autowired
     private TestEntityManager entityManager;
 
     @Autowired
-    private PKOnlyTableRepository repository;
+    private DBService dbService;
 
     @Test
     public void testRepository(){
-        PKOnlyTableRecord record = new PKOnlyTableRecord("AAAA", 1500L, new Date());
-        this.repository.save(record);
 
-        PKOnlyTableRecord record2 = new PKOnlyTableRecord("BBBBDDDDD", 19000L, new Date());
-        this.repository.save(record2);
+      //  this.dbService = new DBService();
 
-        assertEquals(2, this.repository.count());
+        // insere 2 registros
+        this.dbService.addNewRecordPKOnlyTable();
+        this.dbService.addNewRecordPKOnlyTable();
+
+        assertEquals(2, this.dbService.countPKOnlyTableRecords());
 
 
+    }
+
+    @Test
+    public void test10kInserts(){
+
+        long start = System.nanoTime();
+
+        for(int i=0; i < 100000; i++){
+            this.dbService.addNewRecordPKOnlyTable();
+        }
+
+        long end = System.nanoTime();
+
+        double duration = ((double) end - (double) start) / 1000000000.00;
+
+        System.out.println("Tempo decorrido: " + duration + " | Qtd: " + this.dbService.countPKOnlyTableRecords());
     }
 }

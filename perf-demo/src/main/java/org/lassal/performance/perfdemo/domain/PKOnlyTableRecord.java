@@ -11,9 +11,7 @@ public class PKOnlyTableRecord extends SimpleRecord {
     @GeneratedValue(strategy= GenerationType.AUTO)
     private Long id;
 
-    protected PKOnlyTableRecord(){};
+    public PKOnlyTableRecord(){};
 
-    public PKOnlyTableRecord(String f1, Long f2, Date f3){
-        super(f1, f2, f3);
-    }
+
 }

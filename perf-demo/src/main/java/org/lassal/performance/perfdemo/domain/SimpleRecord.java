@@ -4,9 +4,16 @@ import java.util.Date;
 
 public class SimpleRecord {
 
-    private String field1;
-    private Long field2;
-    private Date field3;
+    protected String field1;
+    protected Long field2;
+    protected Date field3;
+    protected String field4;
+    protected double field5;
+    protected String field6;
+    protected String field7;
+    protected Long field8;
+    protected String field9;
+    protected Date field10;
 
     protected SimpleRecord() {}
 
@@ -38,5 +45,61 @@ public class SimpleRecord {
 
     public void setField3(Date field3) {
         this.field3 = field3;
+    }
+
+    public String getField4() {
+        return field4;
+    }
+
+    public void setField4(String field4) {
+        this.field4 = field4;
+    }
+
+    public double getField5() {
+        return field5;
+    }
+
+    public void setField5(double field5) {
+        this.field5 = field5;
+    }
+
+    public String getField6() {
+        return field6;
+    }
+
+    public void setField6(String field6) {
+        this.field6 = field6;
+    }
+
+    public String getField7() {
+        return field7;
+    }
+
+    public void setField7(String field7) {
+        this.field7 = field7;
+    }
+
+    public Long getField8() {
+        return field8;
+    }
+
+    public void setField8(Long field8) {
+        this.field8 = field8;
+    }
+
+    public String getField9() {
+        return field9;
+    }
+
+    public void setField9(String field9) {
+        this.field9 = field9;
+    }
+
+    public Date getField10() {
+        return field10;
+    }
+
+    public void setField10(Date field10) {
+        this.field10 = field10;
     }
 }
