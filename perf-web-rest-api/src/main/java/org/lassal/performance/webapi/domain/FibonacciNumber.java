@@ -4,13 +4,13 @@ public class FibonacciNumber {
 
     private int seq0 = 0;
     private int seq1 = 1;
-    private int seq = 0;
+    private int sequence = 0;
     private long fibonacciNumber = 0;
 
     public FibonacciNumber(int sequence){
-        this.seq = sequence;
+        this.sequence = sequence;
 
-        this.fibonacciNumber = this.calculateFibonacciSequenceNumber(this.seq);
+        this.fibonacciNumber = this.calculateFibonacciSequenceNumber(this.getSequence());
     }
 
     private long calculateFibonacciSequenceNumber(int seq) {
@@ -41,5 +41,9 @@ public class FibonacciNumber {
 
     public long getFibonacciNumber() {
         return fibonacciNumber;
+    }
+
+    public int getSequence() {
+        return sequence;
     }
 }
