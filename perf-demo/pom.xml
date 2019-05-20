@@ -10,7 +10,7 @@
 	</parent>
 	<groupId>org.lassal.performance</groupId>
 	<artifactId>perf-demo</artifactId>
-	<version>0.0.1-SNAPSHOT</version>
+	<version>0.1.0-SNAPSHOT</version>
 	<name>perf-demo</name>
 	<description>Demonstration project for performance testing of simple processing and IO operations</description>
 
