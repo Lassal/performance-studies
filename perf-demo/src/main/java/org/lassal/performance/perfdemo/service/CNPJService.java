@@ -53,4 +53,23 @@ public class CNPJService {
         return cleanCNPJ+digit;
 
     }
+
+    public void calculateVerificationDigitNTimes(int numberOfExecutions) throws Exception {
+        String[] raizCnpjSet = new String[5];
+        raizCnpjSet[0] = "14.572.457.0001";
+        raizCnpjSet[1] = "34.756.552/0001";
+        raizCnpjSet[2] = "53.008.363/0001";
+        raizCnpjSet[3] = "53.047.545/0001";
+        raizCnpjSet[4] = "58.763.276/0001";
+
+        int cnpjIndex = 0;
+
+        for(int i =0; i < numberOfExecutions; i++){
+            cnpjIndex = i % raizCnpjSet.length;
+
+            this.calculaDigitoVerificador(raizCnpjSet[cnpjIndex]);
+        }
+
+
+    }
 }
