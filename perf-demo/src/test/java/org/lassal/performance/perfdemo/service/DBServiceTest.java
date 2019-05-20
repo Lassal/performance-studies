@@ -14,22 +14,26 @@ import static org.junit.Assert.*;
 
 @RunWith(SpringRunner.class)
 @ComponentScan("org.lassal.performance.perfdemo.*")
+//@DataJpaTest
 @SpringBootTest
 public class DBServiceTest {
 
     @Autowired
     private DBService dbService;
 
+    //@Autowired
+    private TestEntityManager entityManager;
+
     @Test
     public void testRepository(){
 
-      //  this.dbService = new DBService();
+        long prevCount = this.dbService.countPKOnlyTableRecords();
 
         // insere 2 registros
         this.dbService.addNewRecordPKOnlyTable();
         this.dbService.addNewRecordPKOnlyTable();
 
-        assertEquals(2, this.dbService.countPKOnlyTableRecords());
+        assertEquals(prevCount + 2L, this.dbService.countPKOnlyTableRecords());
 
 
     }
@@ -39,7 +43,7 @@ public class DBServiceTest {
 
         long start = System.nanoTime();
 
-        this.dbService.addRecordSetRecordPKOnlyTable(10000);
+        this.dbService.addRecordSetRecordPKOnlyTable(100);
 
         long end = System.nanoTime();
 
