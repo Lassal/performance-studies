@@ -1,0 +1,780 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="ee8e785e-1101-48e5-876b-7b8beffc45dc" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/../perf-web-rest-api/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../perf-web-rest-api/.mvn/wrapper/MavenWrapperDownloader.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../perf-web-rest-api/.mvn/wrapper/maven-wrapper.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../perf-web-rest-api/.mvn/wrapper/maven-wrapper.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../perf-web-rest-api/mvnw" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../perf-web-rest-api/mvnw.cmd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../perf-web-rest-api/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../perf-web-rest-api/src/main/java/org/lassal/performance/webapi/PerfWebRestApiApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../perf-web-rest-api/src/main/java/org/lassal/performance/webapi/controller/FibonacciController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../perf-web-rest-api/src/main/java/org/lassal/performance/webapi/domain/FibonacciNumber.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../perf-web-rest-api/src/main/resources/application.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../perf-web-rest-api/src/test/java/org/lassal/performance/webapi/PerfWebRestApiApplicationTests.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../perf-web-rest-api/src/test/java/org/lassal/performance/webapi/domain/FibonacciNumberTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../perf-demo/perf-web-rest-api/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../perf-demo/perf-web-rest-api/.mvn/wrapper/MavenWrapperDownloader.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../perf-demo/perf-web-rest-api/.mvn/wrapper/maven-wrapper.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../perf-demo/perf-web-rest-api/.mvn/wrapper/maven-wrapper.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../perf-demo/perf-web-rest-api/mvnw" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../perf-demo/perf-web-rest-api/mvnw.cmd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../perf-demo/perf-web-rest-api/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../perf-demo/perf-web-rest-api/src/main/java/org/lassal/performance/webapi/PerfWebRestApiApplication.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../perf-demo/perf-web-rest-api/src/main/java/org/lassal/performance/webapi/controller/FibonacciController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../perf-demo/perf-web-rest-api/src/main/java/org/lassal/performance/webapi/domain/FibonacciNumber.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../perf-demo/perf-web-rest-api/src/main/resources/application.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../perf-demo/perf-web-rest-api/src/test/java/org/lassal/performance/webapi/PerfWebRestApiApplicationTests.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../perf-demo/perf-web-rest-api/src/test/java/org/lassal/performance/webapi/domain/FibonacciNumberTest.java" beforeDir="false" />
+    </list>
+    <ignored path="$PROJECT_DIR$/../perf-demo/target/" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FUSProjectUsageTrigger">
+    <session id="-238300024">
+      <usages-collector id="statistics.lifecycle.project">
+        <counts>
+          <entry key="project.closed" value="5" />
+          <entry key="project.open.time.14" value="3" />
+          <entry key="project.open.time.15" value="1" />
+          <entry key="project.open.time.16" value="1" />
+          <entry key="project.open.time.5" value="1" />
+          <entry key="project.opened" value="6" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.open">
+        <counts>
+          <entry key="CLASS" value="1" />
+          <entry key="JAVA" value="12" />
+          <entry key="PLAIN_TEXT" value="3" />
+          <entry key="XML" value="2" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.edit">
+        <counts>
+          <entry key="JAVA" value="3924" />
+          <entry key="PLAIN_TEXT" value="435" />
+          <entry key="XML" value="3" />
+        </counts>
+      </usages-collector>
+    </session>
+  </component>
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="false">
+        <entry file="jar://$MAVEN_REPOSITORY$/junit/junit/4.12/junit-4.12.jar!/org/junit/internal/runners/model/ReflectiveCallable.class">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="247">
+              <caret line="16" selection-start-line="16" selection-end-line="16" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/../perf-demo/src/test/java/org/lassal/performance/perfdemo/service/CNPJServiceTest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="437">
+              <caret line="23" column="54" lean-forward="true" selection-start-line="23" selection-start-column="54" selection-end-line="23" selection-end-column="54" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/../perf-demo/src/main/java/org/lassal/performance/perfdemo/service/FindMethodsService.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1919">
+              <caret line="106" column="62" selection-start-line="106" selection-start-column="62" selection-end-line="106" selection-end-column="62" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/../perf-demo/src/test/java/org/lassal/performance/perfdemo/service/FindMethodsServiceTest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-304">
+              <caret line="14" column="48" selection-start-line="14" selection-start-column="48" selection-end-line="14" selection-end-column="48" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/../perf-demo/pom.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="266">
+              <caret line="14" column="101" selection-start-line="14" selection-start-column="17" selection-end-line="14" selection-end-column="101" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/../perf-demo/src/main/java/org/lassal/performance/perfdemo/domain/KeyValue.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="209">
+              <caret line="11" column="3" selection-start-line="11" selection-start-column="3" selection-end-line="11" selection-end-column="3" />
+              <folding>
+                <element signature="e#251#252#0" expanded="true" />
+                <element signature="e#277#278#0" expanded="true" />
+                <element signature="e#313#314#0" expanded="true" />
+                <element signature="e#343#344#0" expanded="true" />
+                <element signature="e#373#374#0" expanded="true" />
+                <element signature="e#401#402#0" expanded="true" />
+                <element signature="e#441#442#0" expanded="true" />
+                <element signature="e#475#476#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/../perf-demo/src/main/java/org/lassal/performance/perfdemo/domain/SimpleRecord.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="190">
+              <caret line="10" column="31" selection-start-line="10" selection-start-column="31" selection-end-line="10" selection-end-column="31" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/../perf-demo/src/main/java/org/lassal/performance/perfdemo/domain/PKOnlyTableRecord.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="266">
+              <caret line="15" column="51" selection-start-line="15" selection-start-column="51" selection-end-line="15" selection-end-column="51" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/../perf-demo/src/test/java/org/lassal/performance/perfdemo/service/DBServiceTest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="171">
+              <caret line="19" column="44" selection-start-line="19" selection-start-column="44" selection-end-line="19" selection-end-column="44" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/../perf-demo/src/test/java/org/lassal/performance/perfdemo/PerfDemoApplicationTests.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="114">
+              <caret line="9" selection-start-line="7" selection-end-line="9" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+        <option value="JUnit4 Test Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/../perf-demo/src/main/java/org/lassal/performance/perfdemo/service/CNPJService.java" />
+        <option value="$PROJECT_DIR$/../perf-demo/src/main/java/org/lassal/performance/perfdemo/repository/PKOnlyTableRepository.java" />
+        <option value="$PROJECT_DIR$/../perf-demo/pom.xml" />
+        <option value="$PROJECT_DIR$/../perf-demo/src/main/java/org/lassal/performance/perfdemo/domain/PKOnlyTableRecord.java" />
+        <option value="$PROJECT_DIR$/../perf-demo/src/main/java/org/lassal/performance/perfdemo/domain/SimpleRecord.java" />
+        <option value="$PROJECT_DIR$/../perf-demo/src/test/java/org/lassal/performance/perfdemo/service/DBServiceTest.java" />
+        <option value="$PROJECT_DIR$/../perf-demo/src/main/java/org/lassal/performance/perfdemo/domain/KeyValue.java" />
+        <option value="$PROJECT_DIR$/../perf-demo/src/test/java/org/lassal/performance/perfdemo/service/FindMethodsServiceTest.java" />
+        <option value="$PROJECT_DIR$/../perf-demo/src/main/java/org/lassal/performance/perfdemo/service/FindMethodsService.java" />
+        <option value="$PROJECT_DIR$/../perf-demo/src/test/java/org/lassal/performance/perfdemo/service/CNPJServiceTest.java" />
+      </list>
+    </option>
+  </component>
+  <component name="MavenProjectNavigator">
+    <treeState>
+      <expand>
+        <path>
+          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
+          <item name="perf-demo" type="9519ce18:MavenProjectsStructure$ProjectNode" />
+        </path>
+        <path>
+          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
+          <item name="perf-demo" type="9519ce18:MavenProjectsStructure$ProjectNode" />
+          <item name="Lifecycle" type="58874e2:MavenProjectsStructure$LifecycleNode" />
+        </path>
+      </expand>
+      <select />
+    </treeState>
+  </component>
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="298" />
+    <option name="y" value="294" />
+    <option name="width" value="1390" />
+    <option name="height" value="1006" />
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="Scope">
+        <subPane subId="Scope 'Project Files'; set:Project Files; class com.intellij.psi.search.scope.ProjectFilesScope">
+          <expand>
+            <path>
+              <item name="Performance" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
+              <item name="" type="442cc68d:ScopeViewTreeModel$RootNode" />
+            </path>
+            <path>
+              <item name="Performance" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
+              <item name="" type="442cc68d:ScopeViewTreeModel$RootNode" />
+              <item name=".idea" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+      <pane id="PackagesPane" />
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="Performance" type="b2602c69:ProjectViewProjectNode" />
+              <item name="perf-demo" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Performance" type="b2602c69:ProjectViewProjectNode" />
+              <item name="perf-demo" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Performance" type="b2602c69:ProjectViewProjectNode" />
+              <item name="perf-demo" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Performance" type="b2602c69:ProjectViewProjectNode" />
+              <item name="perf-demo" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Performance" type="b2602c69:ProjectViewProjectNode" />
+              <item name="perf-demo" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="perfdemo" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Performance" type="b2602c69:ProjectViewProjectNode" />
+              <item name="perf-demo" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="perfdemo" type="462c0819:PsiDirectoryNode" />
+              <item name="domain" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Performance" type="b2602c69:ProjectViewProjectNode" />
+              <item name="perf-demo" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="perfdemo" type="462c0819:PsiDirectoryNode" />
+              <item name="repository" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Performance" type="b2602c69:ProjectViewProjectNode" />
+              <item name="perf-demo" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="perfdemo" type="462c0819:PsiDirectoryNode" />
+              <item name="service" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Performance" type="b2602c69:ProjectViewProjectNode" />
+              <item name="perf-demo" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Performance" type="b2602c69:ProjectViewProjectNode" />
+              <item name="perf-demo" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Performance" type="b2602c69:ProjectViewProjectNode" />
+              <item name="perf-demo" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="perfdemo" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Performance" type="b2602c69:ProjectViewProjectNode" />
+              <item name="perf-demo" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="perfdemo" type="462c0819:PsiDirectoryNode" />
+              <item name="service" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1558349867422" />
+    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit4" />
+    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit4" value="" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../perf-demo/perf-web-rest-api" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CreateTestDialog.RecentsKey">
+      <recent name="org.lassal.performance.perfdemo.service" />
+    </key>
+    <key name="CreateTestDialog.Recents.Supers">
+      <recent name="" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager" selected="JUnit.FindMethodsServiceTest">
+    <configuration name="CNPJServiceTest.calculaDV10kTimes" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="perf-demo" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.lassal.performance.perfdemo.service.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="org.lassal.performance.perfdemo.service" />
+      <option name="MAIN_CLASS_NAME" value="org.lassal.performance.perfdemo.service.CNPJServiceTest" />
+      <option name="METHOD_NAME" value="calculaDV10kTimes" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="FindMethodsServiceTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="perf-demo" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.lassal.performance.perfdemo.service.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="org.lassal.performance.perfdemo.service" />
+      <option name="MAIN_CLASS_NAME" value="org.lassal.performance.perfdemo.service.FindMethodsServiceTest" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="FindMethodsServiceTest.findInList100KTimesSequential" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="perf-demo" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.lassal.performance.perfdemo.service.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="org.lassal.performance.perfdemo.service" />
+      <option name="MAIN_CLASS_NAME" value="org.lassal.performance.perfdemo.service.FindMethodsServiceTest" />
+      <option name="METHOD_NAME" value="findInList100KTimesSequential" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="FindMethodsServiceTest.findInListNTimesRandom" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="perf-demo" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.lassal.performance.perfdemo.service.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="org.lassal.performance.perfdemo.service" />
+      <option name="MAIN_CLASS_NAME" value="org.lassal.performance.perfdemo.service.FindMethodsServiceTest" />
+      <option name="METHOD_NAME" value="findInListNTimesRandom" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="FindMethodsServiceTest.findInMapNTimesRandom" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="perf-demo" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.lassal.performance.perfdemo.service.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="org.lassal.performance.perfdemo.service" />
+      <option name="MAIN_CLASS_NAME" value="org.lassal.performance.perfdemo.service.FindMethodsServiceTest" />
+      <option name="METHOD_NAME" value="findInMapNTimesRandom" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <list>
+      <item itemvalue="JUnit.CNPJServiceTest.calculaDV10kTimes" />
+      <item itemvalue="JUnit.FindMethodsServiceTest" />
+      <item itemvalue="JUnit.FindMethodsServiceTest.findInMapNTimesRandom" />
+      <item itemvalue="JUnit.FindMethodsServiceTest.findInListNTimesRandom" />
+      <item itemvalue="JUnit.FindMethodsServiceTest.findInList100KTimesSequential" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.FindMethodsServiceTest" />
+        <item itemvalue="JUnit.FindMethodsServiceTest.findInList100KTimesSequential" />
+        <item itemvalue="JUnit.FindMethodsServiceTest.findInListNTimesRandom" />
+        <item itemvalue="JUnit.FindMethodsServiceTest.findInMapNTimesRandom" />
+        <item itemvalue="JUnit.CNPJServiceTest.calculaDV10kTimes" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="ee8e785e-1101-48e5-876b-7b8beffc45dc" name="Default Changelist" comment="" />
+      <created>1557999162398</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1557999162398</updated>
+    </task>
+    <task id="LOCAL-00001" summary="Adicionado README&#10;Criado classe para geração de digito verificador de CNPJ">
+      <created>1558003943974</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1558003943974</updated>
+    </task>
+    <task id="LOCAL-00002" summary="Teste de performance de execução de digito verificador">
+      <created>1558004437502</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1558004437502</updated>
+    </task>
+    <task id="LOCAL-00003" summary="Adicionado versão preliminar de repositório JPA. Falta finalizar o exemplo e mudar de h2 para MySQL">
+      <created>1558091309714</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1558091309714</updated>
+    </task>
+    <task id="LOCAL-00004" summary="Adicionado testes de performance para busca em listas e em maps. Maps são 10000 vezes mais rápidos :D">
+      <created>1558346839113</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1558346839113</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
+    <servers />
+  </component>
+  <component name="TestHistory">
+    <history-entry file="FindMethodsServiceTest_findInListNTimesRandom - 2019.05.19 at 21h 05m 34s.xml">
+      <configuration name="FindMethodsServiceTest.findInListNTimesRandom" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="FindMethodsServiceTest - 2019.05.19 at 21h 08m 00s.xml">
+      <configuration name="FindMethodsServiceTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="FindMethodsServiceTest - 2019.05.19 at 21h 09m 30s.xml">
+      <configuration name="FindMethodsServiceTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="FindMethodsServiceTest - 2019.05.19 at 21h 12m 18s.xml">
+      <configuration name="FindMethodsServiceTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="FindMethodsServiceTest_findInList100KTimesSequential - 2019.05.19 at 21h 16m 31s.xml">
+      <configuration name="FindMethodsServiceTest.findInList100KTimesSequential" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="FindMethodsServiceTest - 2019.05.19 at 21h 18m 53s.xml">
+      <configuration name="FindMethodsServiceTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="FindMethodsServiceTest - 2019.05.19 at 21h 20m 01s.xml">
+      <configuration name="FindMethodsServiceTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="FindMethodsServiceTest - 2019.05.19 at 21h 23m 44s.xml">
+      <configuration name="FindMethodsServiceTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="FindMethodsServiceTest - 2019.05.19 at 21h 24m 08s.xml">
+      <configuration name="FindMethodsServiceTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="FindMethodsServiceTest - 2019.05.19 at 21h 34m 28s.xml">
+      <configuration name="FindMethodsServiceTest" configurationId="JUnit" />
+    </history-entry>
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="0" y="26" width="1920" height="1009" extended-state="6" />
+    <layout>
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.4980916" visible="true" weight="0.26307365" />
+      <window_info id="Structure" order="1" sideWeight="0.5019084" side_tool="true" weight="0.2497332" />
+      <window_info id="Designer" order="2" />
+      <window_info id="Image Layers" order="3" />
+      <window_info id="Capture Tool" order="4" />
+      <window_info id="UI Designer" order="5" />
+      <window_info id="Learn" order="6" weight="0.32977587" />
+      <window_info id="Favorites" order="7" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.32912844" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.39908257" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Version Control" order="7" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Terminal" order="8" />
+      <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
+      <window_info anchor="bottom" id="Messages" order="10" weight="0.32912844" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Palette" order="3" />
+      <window_info anchor="right" id="Capture Analysis" order="4" />
+      <window_info anchor="right" id="Theme Preview" order="5" />
+      <window_info anchor="right" id="Palette&#9;" order="6" />
+      <window_info anchor="right" id="Maven Projects" order="7" weight="0.32977587" />
+    </layout>
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Adicionado README&#10;Criado classe para geração de digito verificador de CNPJ" />
+    <MESSAGE value="Teste de performance de execução de digito verificador" />
+    <MESSAGE value="Adicionado versão preliminar de repositório JPA. Falta finalizar o exemplo e mudar de h2 para MySQL" />
+    <MESSAGE value="Adicionado testes de performance para busca em listas e em maps. Maps são 10000 vezes mais rápidos :D" />
+    <MESSAGE value="Alterando estrutura de projetos" />
+    <option name="LAST_COMMIT_MESSAGE" value="Alterando estrutura de projetos" />
+  </component>
+  <component name="debuggerHistoryManager">
+    <expressions id="breakpointCondition">
+      <expression>
+        <expression-string>key == 999</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+    </expressions>
+    <expressions id="watch">
+      <expression>
+        <expression-string>cleanCNPJ.substring(i,1)</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>cleanCNPJ.substring(0,1)</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>cleanCNPJ.substring(0,3)</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>cleanCNPJ.substring(0,0)</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>cleanCNPJ.substring(i,i)</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+    </expressions>
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/../perf-demo/mvnw.cmd">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../perf-demo/mvnw">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../perf-demo/HELP.md">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../perf-demo/src/main/java/org/lassal/performance/perfdemo/repository/PKOnlyTableRepository.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="95">
+          <caret line="5" column="38" selection-start-line="5" selection-start-column="17" selection-end-line="5" selection-end-column="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../perf-demo/src/main/java/org/lassal/performance/perfdemo/PerfDemoApplication.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="95">
+          <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../perf-demo/src/main/java/org/lassal/performance/perfdemo/service/CNPJService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="665">
+          <caret line="35" selection-start-line="35" selection-end-line="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/junit/junit/4.12/junit-4.12.jar!/org/junit/internal/runners/model/ReflectiveCallable.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="247">
+          <caret line="16" selection-start-line="16" selection-end-line="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../perf-demo/src/main/java/org/lassal/performance/perfdemo/service/FindMethodsService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1919">
+          <caret line="106" column="62" selection-start-line="106" selection-start-column="62" selection-end-line="106" selection-end-column="62" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../perf-demo/src/main/java/org/lassal/performance/perfdemo/domain/KeyValue.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="209">
+          <caret line="11" column="3" selection-start-line="11" selection-start-column="3" selection-end-line="11" selection-end-column="3" />
+          <folding>
+            <element signature="e#251#252#0" expanded="true" />
+            <element signature="e#277#278#0" expanded="true" />
+            <element signature="e#313#314#0" expanded="true" />
+            <element signature="e#343#344#0" expanded="true" />
+            <element signature="e#373#374#0" expanded="true" />
+            <element signature="e#401#402#0" expanded="true" />
+            <element signature="e#441#442#0" expanded="true" />
+            <element signature="e#475#476#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../perf-demo/src/main/java/org/lassal/performance/perfdemo/domain/SimpleRecord.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="190">
+          <caret line="10" column="31" selection-start-line="10" selection-start-column="31" selection-end-line="10" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../perf-demo/src/main/java/org/lassal/performance/perfdemo/domain/PKOnlyTableRecord.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="266">
+          <caret line="15" column="51" selection-start-line="15" selection-start-column="51" selection-end-line="15" selection-end-column="51" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../perf-demo/src/test/java/org/lassal/performance/perfdemo/service/DBServiceTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="171">
+          <caret line="19" column="44" selection-start-line="19" selection-start-column="44" selection-end-line="19" selection-end-column="44" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../perf-demo/src/test/java/org/lassal/performance/perfdemo/PerfDemoApplicationTests.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="114">
+          <caret line="9" selection-start-line="7" selection-end-line="9" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../perf-demo/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="266">
+          <caret line="14" column="101" selection-start-line="14" selection-start-column="17" selection-end-line="14" selection-end-column="101" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../perf-demo/src/test/java/org/lassal/performance/perfdemo/service/FindMethodsServiceTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-304">
+          <caret line="14" column="48" selection-start-line="14" selection-start-column="48" selection-end-line="14" selection-end-column="48" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../perf-demo/src/test/java/org/lassal/performance/perfdemo/service/CNPJServiceTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="437">
+          <caret line="23" column="54" lean-forward="true" selection-start-line="23" selection-start-column="54" selection-end-line="23" selection-end-column="54" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+  </component>
+  <component name="masterDetails">
+    <states>
+      <state key="ProjectJDKs.UI">
+        <settings>
+          <last-edited>JDK_1.8.0</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+    </states>
+  </component>
+</project>
