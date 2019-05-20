@@ -17,13 +17,8 @@ public class SimpleRecord {
     protected String field9;
     protected Date field10;
 
-    protected SimpleRecord() {}
+    public SimpleRecord() {}
 
-    public SimpleRecord(String f1, Long f2, Date f3){
-        this.field1 = f1;
-        this.field2 = f2;
-        this.field3 = f3;
-    }
 
     public String getField1() {
         return field1;

@@ -24,31 +24,36 @@ public class DBServiceTest {
     //@Autowired
     private TestEntityManager entityManager;
 
-    @Test
-    public void testRepository(){
-
-        long prevCount = this.dbService.countPKOnlyTableRecords();
-
-        // insere 2 registros
-        this.dbService.addNewRecordPKOnlyTable();
-        this.dbService.addNewRecordPKOnlyTable();
-
-        assertEquals(prevCount + 2L, this.dbService.countPKOnlyTableRecords());
-
-
-    }
+    private final int TEST_SIZE = 15000;
 
     @Test
-    public void test100kInserts(){
+    public void test100kInsertsMultiIndexTable(){
 
         long start = System.nanoTime();
 
-        this.dbService.addRecordSetRecordPKOnlyTable(100);
+        this.dbService.addRecordSetRecordMultiIndexTable(this.TEST_SIZE);
 
         long end = System.nanoTime();
 
         double duration = ((double) end - (double) start) / 1000000000.00;
 
-        System.out.println("Tempo decorrido: " + duration + " | Qtd: " + this.dbService.countPKOnlyTableRecords());
+        System.out.println("Tempo decorrido INSERT MULTI INDEX: " + duration + " | Qtd: " + this.dbService.countMultiIndexTableRecords());
     }
+
+    @Test
+    public void test100kInsertsPKOnlyTable(){
+
+        long start = System.nanoTime();
+
+        this.dbService.addRecordSetRecordPKOnlyTable(this.TEST_SIZE);
+
+        long end = System.nanoTime();
+
+        double duration = ((double) end - (double) start) / 1000000000.00;
+
+        System.out.println("Tempo decorrido INSERT PK ONLY: " + duration + " | Qtd: " + this.dbService.countPKOnlyTableRecords());
+    }
+
+
 }
+

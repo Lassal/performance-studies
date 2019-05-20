@@ -1,13 +1,11 @@
 package org.lassal.performance.perfdemo.service;
 
-import org.lassal.performance.perfdemo.domain.SimpleRecord;
 import org.lassal.performance.perfdemo.repository.SimpleRecordFileRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
 import java.io.IOException;
 import java.text.SimpleDateFormat;
-import java.util.ArrayList;
 import java.util.Date;
 
 @Component
@@ -23,7 +21,7 @@ public class FileService {
 
             for(int i=0; i < numberRecords; i++){
 
-                repository.save(this.recordBuilder.createTableRecord());
+                repository.save(this.recordBuilder.createPKOnlyTableRecord());
             }
         }
 
