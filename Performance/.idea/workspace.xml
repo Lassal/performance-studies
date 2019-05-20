@@ -2,20 +2,33 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ee8e785e-1101-48e5-876b-7b8beffc45dc" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/../perf-demo/perf-web-rest-api/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../perf-demo/perf-web-rest-api/.mvn/wrapper/MavenWrapperDownloader.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../perf-demo/perf-web-rest-api/.mvn/wrapper/maven-wrapper.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../perf-demo/perf-web-rest-api/.mvn/wrapper/maven-wrapper.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../perf-demo/perf-web-rest-api/mvnw" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../perf-demo/perf-web-rest-api/mvnw.cmd" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../perf-demo/perf-web-rest-api/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../perf-demo/perf-web-rest-api/src/main/java/org/lassal/performance/webapi/PerfWebRestApiApplication.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../perf-demo/perf-web-rest-api/src/main/java/org/lassal/performance/webapi/controller/FibonacciController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../perf-demo/perf-web-rest-api/src/main/java/org/lassal/performance/webapi/domain/FibonacciNumber.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../perf-demo/perf-web-rest-api/src/main/resources/application.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../perf-demo/perf-web-rest-api/src/test/java/org/lassal/performance/webapi/PerfWebRestApiApplicationTests.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../perf-demo/perf-web-rest-api/src/test/java/org/lassal/performance/webapi/domain/FibonacciNumberTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../perf-web-rest-api/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../perf-web-rest-api/.mvn/wrapper/MavenWrapperDownloader.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../perf-web-rest-api/.mvn/wrapper/maven-wrapper.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../perf-web-rest-api/.mvn/wrapper/maven-wrapper.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../perf-web-rest-api/mvnw" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../perf-web-rest-api/mvnw.cmd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../perf-web-rest-api/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../perf-web-rest-api/src/main/java/org/lassal/performance/webapi/PerfWebRestApiApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../perf-web-rest-api/src/main/java/org/lassal/performance/webapi/controller/FibonacciController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../perf-web-rest-api/src/main/java/org/lassal/performance/webapi/domain/FibonacciNumber.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../perf-web-rest-api/src/main/resources/application.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../perf-web-rest-api/src/test/java/org/lassal/performance/webapi/PerfWebRestApiApplicationTests.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../perf-web-rest-api/src/test/java/org/lassal/performance/webapi/domain/FibonacciNumberTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../perf-demo/perf-web-rest-api/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../perf-demo/perf-web-rest-api/.mvn/wrapper/MavenWrapperDownloader.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../perf-demo/perf-web-rest-api/.mvn/wrapper/maven-wrapper.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../perf-demo/perf-web-rest-api/.mvn/wrapper/maven-wrapper.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../perf-demo/perf-web-rest-api/mvnw" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../perf-demo/perf-web-rest-api/mvnw.cmd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../perf-demo/perf-web-rest-api/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../perf-demo/perf-web-rest-api/src/main/java/org/lassal/performance/webapi/PerfWebRestApiApplication.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../perf-demo/perf-web-rest-api/src/main/java/org/lassal/performance/webapi/controller/FibonacciController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../perf-demo/perf-web-rest-api/src/main/java/org/lassal/performance/webapi/domain/FibonacciNumber.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../perf-demo/perf-web-rest-api/src/main/resources/application.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../perf-demo/perf-web-rest-api/src/test/java/org/lassal/performance/webapi/PerfWebRestApiApplicationTests.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../perf-demo/perf-web-rest-api/src/test/java/org/lassal/performance/webapi/domain/FibonacciNumberTest.java" beforeDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/../perf-demo/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -46,8 +59,8 @@
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="3923" />
-          <entry key="PLAIN_TEXT" value="398" />
+          <entry key="JAVA" value="3924" />
+          <entry key="PLAIN_TEXT" value="435" />
           <entry key="XML" value="3" />
         </counts>
       </usages-collector>
@@ -67,8 +80,11 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/../perf-demo/src/test/java/org/lassal/performance/perfdemo/service/CNPJServiceTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="76">
-              <caret line="4" selection-start-line="4" selection-end-line="4" selection-end-column="33" />
+            <state relative-caret-position="437">
+              <caret line="23" column="54" lean-forward="true" selection-start-line="23" selection-start-column="54" selection-end-line="23" selection-end-column="54" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -192,10 +208,10 @@
         <option value="$PROJECT_DIR$/../perf-demo/src/main/java/org/lassal/performance/perfdemo/domain/PKOnlyTableRecord.java" />
         <option value="$PROJECT_DIR$/../perf-demo/src/main/java/org/lassal/performance/perfdemo/domain/SimpleRecord.java" />
         <option value="$PROJECT_DIR$/../perf-demo/src/test/java/org/lassal/performance/perfdemo/service/DBServiceTest.java" />
-        <option value="$PROJECT_DIR$/../perf-demo/src/test/java/org/lassal/performance/perfdemo/service/CNPJServiceTest.java" />
         <option value="$PROJECT_DIR$/../perf-demo/src/main/java/org/lassal/performance/perfdemo/domain/KeyValue.java" />
         <option value="$PROJECT_DIR$/../perf-demo/src/test/java/org/lassal/performance/perfdemo/service/FindMethodsServiceTest.java" />
         <option value="$PROJECT_DIR$/../perf-demo/src/main/java/org/lassal/performance/perfdemo/service/FindMethodsService.java" />
+        <option value="$PROJECT_DIR$/../perf-demo/src/test/java/org/lassal/performance/perfdemo/service/CNPJServiceTest.java" />
       </list>
     </option>
   </component>
@@ -341,7 +357,7 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1558312995344" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1558349867422" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit4" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit4" value="" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../perf-demo/perf-web-rest-api" />
@@ -538,7 +554,6 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="26" width="1920" height="1009" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.4980916" visible="true" weight="0.26307365" />
       <window_info id="Structure" order="1" sideWeight="0.5019084" side_tool="true" weight="0.2497332" />
@@ -577,7 +592,8 @@
     <MESSAGE value="Teste de performance de execução de digito verificador" />
     <MESSAGE value="Adicionado versão preliminar de repositório JPA. Falta finalizar o exemplo e mudar de h2 para MySQL" />
     <MESSAGE value="Adicionado testes de performance para busca em listas e em maps. Maps são 10000 vezes mais rápidos :D" />
-    <option name="LAST_COMMIT_MESSAGE" value="Adicionado testes de performance para busca em listas e em maps. Maps são 10000 vezes mais rápidos :D" />
+    <MESSAGE value="Alterando estrutura de projetos" />
+    <option name="LAST_COMMIT_MESSAGE" value="Alterando estrutura de projetos" />
   </component>
   <component name="debuggerHistoryManager">
     <expressions id="breakpointCondition">
@@ -736,8 +752,11 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/../perf-demo/src/test/java/org/lassal/performance/perfdemo/service/CNPJServiceTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="76">
-          <caret line="4" selection-start-line="4" selection-end-line="4" selection-end-column="33" />
+        <state relative-caret-position="437">
+          <caret line="23" column="54" lean-forward="true" selection-start-line="23" selection-start-column="54" selection-end-line="23" selection-end-column="54" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
