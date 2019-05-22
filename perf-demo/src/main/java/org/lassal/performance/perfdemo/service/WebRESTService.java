@@ -1,6 +1,7 @@
 package org.lassal.performance.perfdemo.service;
 
 import org.lassal.performance.perfdemo.domain.FibonacciNumber;
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Component;
 import org.springframework.web.client.RestTemplate;
 
@@ -9,9 +10,11 @@ import java.util.Random;
 @Component
 public class WebRESTService {
 
+    @Value( "${perfdemo.webapiserver.url}" )
+    private String webApiURL;
+
     public void callRESTWebAPI(int numberOfCalls, boolean sameCall){
 
-        String webApiURL = "http://localhost:9510/fibonacci/";
         Random rand = new Random();
         RestTemplate restTemplate = new RestTemplate();
         String apiRequest = webApiURL + "/" + rand.nextInt(3000);
