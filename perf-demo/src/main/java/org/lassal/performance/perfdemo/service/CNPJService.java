@@ -1,9 +1,13 @@
 package org.lassal.performance.perfdemo.service;
 
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.stereotype.Component;
 
 @Component
 public class CNPJService {
+
+    Logger logger = LoggerFactory.getLogger(CNPJService.class);
 
     private int[] baseConvMod11 = new int[]{5,4,3,2,9,8,7,6,5,4,3,2};
 
@@ -36,6 +40,11 @@ public class CNPJService {
         return raizCNPJ + "-" + cnpj.substring(12,14);
     }
 
+    /**
+     * Calculo o digito verificador para um CNPJ base
+     * @param cleanCNPJ
+     * @return
+     */
     private String addDigitoVerificador(String cleanCNPJ){
         int mod11Peso = 2;
         int total = 0;

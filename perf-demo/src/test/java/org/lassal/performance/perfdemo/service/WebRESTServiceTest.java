@@ -2,6 +2,8 @@ package org.lassal.performance.perfdemo.service;
 
 import org.junit.Test;
 import org.junit.runner.RunWith;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.context.annotation.ComponentScan;
@@ -14,6 +16,7 @@ import static org.junit.Assert.*;
 @SpringBootTest
 public class WebRESTServiceTest {
 
+    Logger logger = LoggerFactory.getLogger(FindMethodsServiceTest.class);
 
     @Autowired
     private WebRESTService service;
@@ -31,6 +34,6 @@ public class WebRESTServiceTest {
 
         double duration = ((double) end - (double) start) / 1000000000.00;
 
-        System.out.println("Tempo decorrido Web API call: " + duration + " | Number of calls: " + numberOfHits );
+        logger.info("Tempo decorrido Web API call: " + duration + " | Number of calls: " + numberOfHits );
     }
 }

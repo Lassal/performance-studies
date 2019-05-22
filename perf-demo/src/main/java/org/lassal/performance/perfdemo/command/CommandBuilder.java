@@ -2,11 +2,15 @@ package org.lassal.performance.perfdemo.command;
 
 import org.h2.server.web.WebApp;
 import org.lassal.performance.perfdemo.service.*;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
 @Component
 public class CommandBuilder {
+
+    Logger logger = LoggerFactory.getLogger(CommandBuilder.class);
 
     @Autowired
     private CNPJService cnpjService;
@@ -31,7 +35,7 @@ public class CommandBuilder {
                 cmd = PerfDemoCommands.valueOf(requestedTest);
             }
             catch (IllegalArgumentException iax){
-                System.out.println("Test not found : " + requestedTest + "  {IGNORING}");
+                logger.error("Test not found : " + requestedTest + "  {IGNORING}");
             }
 
             if(cmd != null){

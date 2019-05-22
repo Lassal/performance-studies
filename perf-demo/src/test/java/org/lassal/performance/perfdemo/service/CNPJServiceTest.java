@@ -1,10 +1,14 @@
 package org.lassal.performance.perfdemo.service;
 
 import org.junit.Test;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
 import static org.junit.Assert.*;
 
 public class CNPJServiceTest {
+
+    Logger logger = LoggerFactory.getLogger(CNPJServiceTest.class);
 
     @Test
     public void calculaDigitoVerificador() throws Exception {
@@ -37,6 +41,6 @@ public class CNPJServiceTest {
 
         double duration = ((double) end - (double) start) / 1000000000.00;
 
-        System.out.println("Tempo decorrido: " + duration);
+        logger.info("Tempo decorrido: " + duration);
     }
 }

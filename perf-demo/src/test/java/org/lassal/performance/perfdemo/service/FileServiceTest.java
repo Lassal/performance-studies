@@ -2,6 +2,8 @@ package org.lassal.performance.perfdemo.service;
 
 import org.junit.Test;
 import org.junit.runner.RunWith;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.context.annotation.ComponentScan;
@@ -15,6 +17,8 @@ import static org.junit.Assert.*;
 @ComponentScan("org.lassal.performance.perfdemo.*")
 @SpringBootTest
 public class FileServiceTest {
+
+    Logger logger = LoggerFactory.getLogger(FileServiceTest.class);
 
     @Autowired
     private FileService fileService;
@@ -37,6 +41,6 @@ public class FileServiceTest {
 
         double duration = ((double) end - (double) start) / 1000000000.00;
 
-        System.out.println("Tempo decorrido: " + duration );
+        logger.info("Tempo decorrido: " + duration );
     }
 }

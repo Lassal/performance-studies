@@ -2,6 +2,8 @@ package org.lassal.performance.perfdemo.service;
 
 import org.junit.Test;
 import org.junit.runner.RunWith;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.autoconfigure.orm.jpa.DataJpaTest;
 import org.springframework.boot.test.autoconfigure.orm.jpa.TestEntityManager;
@@ -17,6 +19,9 @@ import static org.junit.Assert.*;
 //@DataJpaTest
 @SpringBootTest
 public class DBServiceTest {
+
+    Logger logger = LoggerFactory.getLogger(DBServiceTest.class);
+
 
     @Autowired
     private DBService dbService;
@@ -37,7 +42,7 @@ public class DBServiceTest {
 
         double duration = ((double) end - (double) start) / 1000000000.00;
 
-        System.out.println("Tempo decorrido INSERT MULTI INDEX: " + duration + " | Qtd: " + this.dbService.countMultiIndexTableRecords());
+        logger.info("Tempo decorrido INSERT MULTI INDEX: " + duration + " | Qtd: " + this.dbService.countMultiIndexTableRecords());
     }
 
     @Test
@@ -51,7 +56,7 @@ public class DBServiceTest {
 
         double duration = ((double) end - (double) start) / 1000000000.00;
 
-        System.out.println("Tempo decorrido INSERT PK ONLY: " + duration + " | Qtd: " + this.dbService.countPKOnlyTableRecords());
+        logger.info("Tempo decorrido INSERT PK ONLY: " + duration + " | Qtd: " + this.dbService.countPKOnlyTableRecords());
     }
 
 

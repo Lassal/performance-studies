@@ -1,6 +1,11 @@
 package org.lassal.performance.perfdemo.command;
 
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+
 public abstract class MeasurePerformanceCommand implements Command {
+
+    Logger logger = LoggerFactory.getLogger(MeasurePerformanceCommand.class);
 
     private int numberOfExecutions = 1000;
 
@@ -32,14 +37,21 @@ public abstract class MeasurePerformanceCommand implements Command {
         double durationSec = durationNano / 1000000000.00;
         double rate = this.numberOfExecutions / durationSec;
 
-        System.out.println("\n----------------------------------------------------------------------");
-        System.out.println(" :: Test scenario: " + this.getTestName());
-        System.out.println("----------------------------------------------------------------------");
-        System.out.printf("%n    Number of executions: %d | Total time in seconds: %18.9f %n", this.getNumberOfExecutions(), durationSec);
-        System.out.printf("%n    Executions per second: %18.9f %n", rate );
-        System.out.printf("%n    Duration in ms: %18.9f %n", (durationNano / 1000000.00));
-        System.out.printf("%n    Duration in minutes: %18.9f %n", (durationNano / 60000000000.00));
-        System.out.println("-----------------------------------------------------------------------\n");
+        double timePerExec =  (durationNano/(double)this.numberOfExecutions);
+
+        StringBuilder report = new StringBuilder();
+        report.append(" Test results ---> \n");
+        report.append("\n----------------------------------------------------------------------");
+        report.append("\n :: Test scenario: " + this.getTestName());
+        report.append("\n----------------------------------------------------------------------");
+        report.append(String.format("%n    Number of executions: %d | Total time in seconds: %18.9f %n", this.getNumberOfExecutions(), durationSec));
+        report.append(String.format("%n    Executions per second: %18.9f %n", rate ));
+        report.append(String.format("%n    Time per execution in micros: %18.9f %n", timePerExec * 1000.00));
+        report.append(String.format("%n    Duration in ms: %18.9f %n", (durationNano / 1000000.00)));
+        report.append(String.format("%n    Duration in minutes: %18.9f %n", (durationNano / 60000000000.00)));
+        report.append("\n-----------------------------------------------------------------------\n");
+
+        logger.info(report.toString());
 
     }
 
