@@ -46,7 +46,7 @@ public abstract class MeasurePerformanceCommand implements Command {
         report.append("\n----------------------------------------------------------------------");
         report.append(String.format("%n    Number of executions: %d | Total time in seconds: %18.9f %n", this.getNumberOfExecutions(), durationSec));
         report.append(String.format("%n    Executions per second: %18.9f %n", rate ));
-        report.append(String.format("%n    Time per execution in micros: %18.9f %n", timePerExec * 1000.00));
+        report.append(String.format("%n    Time per execution in micros: %18.9f %n", timePerExec / 1000.00));
         report.append(String.format("%n    Duration in ms: %18.9f %n", (durationNano / 1000000.00)));
         report.append(String.format("%n    Duration in minutes: %18.9f %n", (durationNano / 60000000000.00)));
         report.append("\n-----------------------------------------------------------------------\n");
