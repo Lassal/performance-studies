@@ -52,9 +52,9 @@ Formato de chamada:
 
 ```
 Onde 
-  --n : deve ser um número inteiro que indica o número de execuções do teste
-  --test: contém um nome válido de operação de teste
-  --webapiurl: OPCIONAL informa a url do serviço perf-web-rest-api; caso não informado utiliza o endereço padrão http://localhos:9510/fibonacci/
+  - --n : deve ser um número inteiro que indica o número de execuções do teste
+  - --test: contém um nome válido de operação de teste
+  - --webapiurl: OPCIONAL informa a url do serviço perf-web-rest-api; caso não informado utiliza o endereço padrão http://localhos:9510/fibonacci/
 
 Operações de teste válidas:
 
