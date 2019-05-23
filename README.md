@@ -48,12 +48,13 @@ Os testes são executados pela aplicação perf-demo. O número de execuções p
 Formato de chamada:
 
 ```bash
-  java -jar perf-demo-<versao>.jar  --n=<número de execuções> --test=<nome do primeiro teste> --test=<nome do segundo teste> ... --test=<nome do ultimo teste>
+  java -jar perf-demo-<versao>.jar  --n=<número de execuções> --test=<nome do primeiro teste> --test=<nome do segundo teste> ... --test=<nome do ultimo teste> 
 
 ```
 Onde 
   --n : deve ser um número inteiro que indica o número de execuções do teste
   --test: contém um nome válido de operação de teste
+  --webapiurl: OPCIONAL informa a url do serviço perf-web-rest-api; caso não informado utiliza o endereço padrão http://localhos:9510/fibonacci/
 
 Operações de teste válidas:
 
@@ -71,4 +72,7 @@ Exemplo de uso:
 ```bash
   java -jar perf-demo-<versao>.jar  --n=50000 --test=OnlyCPU --test=FileWrite --test=DBWrite --test=WebApiCall 
 
+# chamada passando um outro endereço para o serviço Web API
+
+java -jar perf-demo-<versao>.jar  --n=50000 --test=OnlyCPU --test=FileWrite --test=DBWrite --test=WebApiCall  --webapiurl=http://172.10.4.55:8080/fibonacci/
 ```

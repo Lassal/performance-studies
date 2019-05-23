@@ -1,16 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="ee8e785e-1101-48e5-876b-7b8beffc45dc" name="Default Changelist" comment="">
+    <list default="true" id="ee8e785e-1101-48e5-876b-7b8beffc45dc" name="Default Changelist" comment="Alterado solução para direcionar todas as mensagens para o log">
+      <change afterPath="$PROJECT_DIR$/../perf-demo/src/main/java/org/lassal/performance/perfdemo/PerfDemoOptions.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../cmd/10_start_webapi.sh" beforeDir="false" afterPath="$PROJECT_DIR$/../cmd/10_start_webapi.sh" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../perf-demo/src/main/java/org/lassal/performance/perfdemo/PerfDemoApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/../perf-demo/src/main/java/org/lassal/performance/perfdemo/PerfDemoApplication.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../perf-demo/src/main/java/org/lassal/performance/perfdemo/command/CommandBuilder.java" beforeDir="false" afterPath="$PROJECT_DIR$/../perf-demo/src/main/java/org/lassal/performance/perfdemo/command/CommandBuilder.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../perf-demo/src/main/java/org/lassal/performance/perfdemo/command/MeasurePerformanceCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/../perf-demo/src/main/java/org/lassal/performance/perfdemo/command/MeasurePerformanceCommand.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../perf-demo/src/main/java/org/lassal/performance/perfdemo/service/CNPJService.java" beforeDir="false" afterPath="$PROJECT_DIR$/../perf-demo/src/main/java/org/lassal/performance/perfdemo/service/CNPJService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../perf-demo/src/main/java/org/lassal/performance/perfdemo/service/DBService.java" beforeDir="false" afterPath="$PROJECT_DIR$/../perf-demo/src/main/java/org/lassal/performance/perfdemo/service/DBService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../perf-demo/src/test/java/org/lassal/performance/perfdemo/service/CNPJServiceTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/../perf-demo/src/test/java/org/lassal/performance/perfdemo/service/CNPJServiceTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../perf-demo/src/test/java/org/lassal/performance/perfdemo/service/DBServiceTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/../perf-demo/src/test/java/org/lassal/performance/perfdemo/service/DBServiceTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../perf-demo/src/test/java/org/lassal/performance/perfdemo/service/FileServiceTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/../perf-demo/src/test/java/org/lassal/performance/perfdemo/service/FileServiceTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../perf-demo/src/test/java/org/lassal/performance/perfdemo/service/FindMethodsServiceTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/../perf-demo/src/test/java/org/lassal/performance/perfdemo/service/FindMethodsServiceTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../perf-demo/src/main/java/org/lassal/performance/perfdemo/command/DoWebApiCallCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/../perf-demo/src/main/java/org/lassal/performance/perfdemo/command/DoWebApiCallCommand.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../perf-demo/src/main/java/org/lassal/performance/perfdemo/service/WebRESTService.java" beforeDir="false" afterPath="$PROJECT_DIR$/../perf-demo/src/main/java/org/lassal/performance/perfdemo/service/WebRESTService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../perf-demo/src/test/java/org/lassal/performance/perfdemo/service/WebRESTServiceTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/../perf-demo/src/test/java/org/lassal/performance/perfdemo/service/WebRESTServiceTest.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/../perf-demo/target/" />
@@ -24,19 +22,20 @@
     <session id="-238300024">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="6" />
+          <entry key="project.closed" value="7" />
+          <entry key="project.open.time.12" value="1" />
           <entry key="project.open.time.14" value="3" />
           <entry key="project.open.time.15" value="1" />
           <entry key="project.open.time.16" value="1" />
           <entry key="project.open.time.24" value="1" />
           <entry key="project.open.time.5" value="1" />
-          <entry key="project.opened" value="7" />
+          <entry key="project.opened" value="8" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
           <entry key="CLASS" value="1" />
-          <entry key="JAVA" value="26" />
+          <entry key="JAVA" value="33" />
           <entry key="PLAIN_TEXT" value="3" />
           <entry key="Properties" value="1" />
           <entry key="XML" value="2" />
@@ -44,8 +43,8 @@
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="4378" />
-          <entry key="PLAIN_TEXT" value="502" />
+          <entry key="JAVA" value="5628" />
+          <entry key="PLAIN_TEXT" value="589" />
           <entry key="Properties" value="8" />
           <entry key="XML" value="3" />
         </counts>
@@ -55,18 +54,9 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/../perf-demo/src/main/java/org/lassal/performance/perfdemo/command/HelpCommand.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="57">
-              <caret line="3" lean-forward="true" selection-start-line="3" selection-end-line="3" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/../perf-demo/src/main/java/org/lassal/performance/perfdemo/command/MeasurePerformanceCommand.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="74">
+            <state relative-caret-position="114">
               <caret line="7" selection-start-line="7" selection-end-line="7" selection-end-column="77" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -75,11 +65,94 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/../perf-demo/src/main/java/org/lassal/performance/perfdemo/command/CommandBuilder.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="214">
-              <caret line="37" column="29" selection-start-line="37" selection-start-column="29" selection-end-line="37" selection-end-column="29" />
+            <state relative-caret-position="176">
+              <caret line="30" selection-start-line="30" selection-end-line="30" />
+              <folding>
+                <element signature="e#2218#2219#0" expanded="true" />
+                <element signature="e#2259#2260#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/../perf-demo/src/main/java/org/lassal/performance/perfdemo/PerfDemoApplication.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="418">
+              <caret line="37" lean-forward="true" selection-start-line="37" selection-end-line="37" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#867#868#0" expanded="true" />
+                <element signature="e#928#929#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/../perf-demo/src/test/java/org/lassal/performance/perfdemo/service/WebRESTServiceTest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="208">
+              <caret line="34" column="52" selection-start-line="34" selection-start-column="52" selection-end-line="34" selection-end-column="52" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/../perf-demo/src/main/java/org/lassal/performance/perfdemo/PerfDemoOptions.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="493">
+              <caret line="51" column="8" selection-start-line="51" selection-start-column="8" selection-end-line="51" selection-end-column="8" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#1430#1431#0" expanded="true" />
+                <element signature="e#1459#1460#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/../perf-demo/src/main/java/org/lassal/performance/perfdemo/PerfDemoConfiguration.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="114">
+              <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/../perf-demo/src/main/java/org/lassal/performance/perfdemo/service/WebRESTService.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="466">
+              <caret line="34" selection-start-line="34" selection-end-line="34" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/../perf-demo/src/main/java/org/lassal/performance/perfdemo/service/CNPJService.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="171">
+              <caret line="9" column="3" lean-forward="true" selection-start-line="9" selection-start-column="3" selection-end-line="9" selection-end-column="63" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/../perf-demo/src/main/java/org/lassal/performance/perfdemo/command/DoWebApiCallCommand.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="361">
+              <caret line="20" column="52" selection-start-line="20" selection-start-column="52" selection-end-line="20" selection-end-column="52" />
             </state>
           </provider>
         </entry>
@@ -88,7 +161,7 @@
         <entry file="file://$PROJECT_DIR$/../perf-demo/src/test/java/org/lassal/performance/perfdemo/service/FileServiceTest.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="171">
-              <caret line="20" column="67" lean-forward="true" selection-start-line="20" selection-start-column="4" selection-end-line="20" selection-end-column="67" />
+              <caret line="20" column="67" selection-start-line="20" selection-start-column="4" selection-end-line="20" selection-end-column="67" />
             </state>
           </provider>
         </entry>
@@ -98,8 +171,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Class" />
         <option value="JUnit4 Test Class" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -120,17 +193,20 @@
         <option value="$PROJECT_DIR$/../perf-demo/src/main/java/org/lassal/performance/perfdemo/domain/SimpleRecord.java" />
         <option value="$PROJECT_DIR$/../perf-demo/src/main/java/org/lassal/performance/perfdemo/domain/KeyValue.java" />
         <option value="$PROJECT_DIR$/../perf-demo/src/main/java/org/lassal/performance/perfdemo/service/FindMethodsService.java" />
-        <option value="$PROJECT_DIR$/../perf-demo/src/main/java/org/lassal/performance/perfdemo/service/WebRESTService.java" />
         <option value="$PROJECT_DIR$/../perf-demo/src/main/resources/application.properties" />
         <option value="$PROJECT_DIR$/../perf-demo/src/main/java/org/lassal/performance/perfdemo/service/CNPJService.java" />
         <option value="$PROJECT_DIR$/../perf-demo/src/main/java/org/lassal/performance/perfdemo/service/DBService.java" />
         <option value="$PROJECT_DIR$/../perf-demo/src/test/java/org/lassal/performance/perfdemo/service/CNPJServiceTest.java" />
         <option value="$PROJECT_DIR$/../perf-demo/src/test/java/org/lassal/performance/perfdemo/service/FileServiceTest.java" />
         <option value="$PROJECT_DIR$/../perf-demo/src/test/java/org/lassal/performance/perfdemo/service/FindMethodsServiceTest.java" />
-        <option value="$PROJECT_DIR$/../perf-demo/src/test/java/org/lassal/performance/perfdemo/service/WebRESTServiceTest.java" />
         <option value="$PROJECT_DIR$/../perf-demo/src/test/java/org/lassal/performance/perfdemo/service/DBServiceTest.java" />
         <option value="$PROJECT_DIR$/../perf-demo/src/main/java/org/lassal/performance/perfdemo/command/MeasurePerformanceCommand.java" />
+        <option value="$PROJECT_DIR$/../perf-demo/src/main/java/org/lassal/performance/perfdemo/command/DoWebApiCallCommand.java" />
         <option value="$PROJECT_DIR$/../perf-demo/src/main/java/org/lassal/performance/perfdemo/command/CommandBuilder.java" />
+        <option value="$PROJECT_DIR$/../perf-demo/src/main/java/org/lassal/performance/perfdemo/PerfDemoOptions.java" />
+        <option value="$PROJECT_DIR$/../perf-demo/src/test/java/org/lassal/performance/perfdemo/service/WebRESTServiceTest.java" />
+        <option value="$PROJECT_DIR$/../perf-demo/src/main/java/org/lassal/performance/perfdemo/service/WebRESTService.java" />
+        <option value="$PROJECT_DIR$/../perf-demo/src/main/java/org/lassal/performance/perfdemo/PerfDemoApplication.java" />
       </list>
     </option>
   </component>
@@ -161,10 +237,30 @@
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
-    <navigator proportions="" version="1">
+    <navigator currentView="Scope" currentSubView="Scope 'Project Files'; set:Project Files; class com.intellij.psi.search.scope.ProjectFilesScope" proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope">
+        <subPane subId="Scope 'Project Files'; set:Project Files; class com.intellij.psi.search.scope.ProjectFilesScope">
+          <expand>
+            <path>
+              <item name="Performance" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
+              <item name="" type="442cc68d:ScopeViewTreeModel$RootNode" />
+            </path>
+            <path>
+              <item name="Performance" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
+              <item name="" type="442cc68d:ScopeViewTreeModel$RootNode" />
+              <item name=".idea" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+            </path>
+            <path>
+              <item name="Performance" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
+              <item name="perf-demo" type="2674bda8:ScopeViewTreeModel$GroupNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -205,16 +301,7 @@
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="perfdemo" type="462c0819:PsiDirectoryNode" />
-              <item name="domain" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Performance" type="b2602c69:ProjectViewProjectNode" />
-              <item name="perf-demo" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="perfdemo" type="462c0819:PsiDirectoryNode" />
-              <item name="repository" type="462c0819:PsiDirectoryNode" />
+              <item name="command" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="Performance" type="b2602c69:ProjectViewProjectNode" />
@@ -267,29 +354,16 @@
         </subPane>
       </pane>
       <pane id="PackagesPane" />
-      <pane id="Scope">
-        <subPane subId="Scope 'Project Files'; set:Project Files; class com.intellij.psi.search.scope.ProjectFilesScope">
-          <expand>
-            <path>
-              <item name="Performance" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
-              <item name="" type="442cc68d:ScopeViewTreeModel$RootNode" />
-            </path>
-            <path>
-              <item name="Performance" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
-              <item name="" type="442cc68d:ScopeViewTreeModel$RootNode" />
-              <item name=".idea" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-            </path>
-          </expand>
-          <select />
-        </subPane>
-      </pane>
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1558485576133" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1558570074407" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit4" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit4" value="" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../perf-demo/perf-web-rest-api" />
+    <property name="project.structure.last.edited" value="Project" />
+    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.2" />
   </component>
   <component name="RecentsManager">
     <key name="CreateTestDialog.RecentsKey">
@@ -311,7 +385,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.CNPJServiceTest.calculaDV10kTimes">
+  <component name="RunManager" selected="JUnit.WebRESTServiceTest.callRESTWebAPI">
     <configuration name="CNPJServiceTest.calculaDV10kTimes" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="perf-demo" />
       <extension name="coverage">
@@ -399,8 +473,8 @@
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.CNPJServiceTest.calculaDV10kTimes" />
         <item itemvalue="JUnit.WebRESTServiceTest.callRESTWebAPI" />
+        <item itemvalue="JUnit.CNPJServiceTest.calculaDV10kTimes" />
         <item itemvalue="JUnit.FindMethodsServiceTest" />
         <item itemvalue="JUnit.FindMethodsServiceTest.findInList100KTimesSequential" />
         <item itemvalue="JUnit.FindMethodsServiceTest.findInListNTimesRandom" />
@@ -460,16 +534,17 @@
       <option name="project" value="LOCAL" />
       <updated>1558483698750</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="Alterado solução para direcionar todas as mensagens para o log">
+      <created>1558485654190</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1558485654190</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="FindMethodsServiceTest - 2019.05.19 at 21h 09m 30s.xml">
-      <configuration name="FindMethodsServiceTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="FindMethodsServiceTest - 2019.05.19 at 21h 12m 18s.xml">
-      <configuration name="FindMethodsServiceTest" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="FindMethodsServiceTest_findInList100KTimesSequential - 2019.05.19 at 21h 16m 31s.xml">
       <configuration name="FindMethodsServiceTest.findInList100KTimesSequential" configurationId="JUnit" />
     </history-entry>
@@ -494,12 +569,17 @@
     <history-entry file="CNPJServiceTest_calculaDV10kTimes - 2019.05.21 at 21h 18m 19s.xml">
       <configuration name="CNPJServiceTest.calculaDV10kTimes" configurationId="JUnit" />
     </history-entry>
+    <history-entry file="WebRESTServiceTest_callRESTWebAPI - 2019.05.22 at 20h 57m 41s.xml">
+      <configuration name="WebRESTServiceTest.callRESTWebAPI" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="WebRESTServiceTest_callRESTWebAPI - 2019.05.22 at 20h 59m 51s.xml">
+      <configuration name="WebRESTServiceTest.callRESTWebAPI" configurationId="JUnit" />
+    </history-entry>
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="26" width="1920" height="1009" extended-state="6" />
-    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.4980916" visible="true" weight="0.37673426" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.4980916" visible="true" weight="0.3810032" />
       <window_info id="Structure" order="1" sideWeight="0.5019084" side_tool="true" weight="0.2497332" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -509,7 +589,7 @@
       <window_info id="Favorites" order="7" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.32912844" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.3337156" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.39908257" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -525,7 +605,7 @@
       <window_info anchor="right" id="Capture Analysis" order="4" />
       <window_info anchor="right" id="Theme Preview" order="5" />
       <window_info anchor="right" id="Palette&#9;" order="6" />
-      <window_info anchor="right" id="Maven Projects" order="7" weight="0.32977587" />
+      <window_info anchor="right" id="Maven Projects" order="7" visible="true" weight="0.32977587" />
     </layout>
   </component>
   <component name="VcsContentAnnotationSettings">
@@ -538,7 +618,8 @@
     <MESSAGE value="Adicionado testes de performance para busca em listas e em maps. Maps são 10000 vezes mais rápidos :D" />
     <MESSAGE value="Alterando estrutura de projetos" />
     <MESSAGE value="Externalizado o endereço da chamada web no arquivo de properties" />
-    <option name="LAST_COMMIT_MESSAGE" value="Externalizado o endereço da chamada web no arquivo de properties" />
+    <MESSAGE value="Alterado solução para direcionar todas as mensagens para o log" />
+    <option name="LAST_COMMIT_MESSAGE" value="Alterado solução para direcionar todas as mensagens para o log" />
   </component>
   <component name="debuggerHistoryManager">
     <expressions id="breakpointCondition">
@@ -590,13 +671,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="95">
           <caret line="5" column="38" selection-start-line="5" selection-start-column="17" selection-end-line="5" selection-end-column="38" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../perf-demo/src/main/java/org/lassal/performance/perfdemo/PerfDemoApplication.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="95">
-          <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
         </state>
       </provider>
     </entry>
@@ -668,16 +742,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../perf-demo/src/main/java/org/lassal/performance/perfdemo/service/WebRESTService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="17" selection-start-line="17" selection-end-line="17" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/../perf-demo/src/main/resources/application.properties">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="228">
@@ -709,27 +773,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../perf-demo/src/test/java/org/lassal/performance/perfdemo/service/WebRESTServiceTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="456">
-          <caret line="36" column="19" selection-start-line="36" selection-start-column="19" selection-end-line="36" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/../perf-demo/src/test/java/org/lassal/performance/perfdemo/service/FindMethodsServiceTest.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="152">
           <caret line="16" column="74" selection-start-line="16" selection-start-column="4" selection-end-line="16" selection-end-column="74" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../perf-demo/src/main/java/org/lassal/performance/perfdemo/service/CNPJService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="171">
-          <caret line="9" column="3" lean-forward="true" selection-start-line="9" selection-start-column="3" selection-end-line="9" selection-end-column="63" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -749,20 +796,13 @@
     <entry file="file://$PROJECT_DIR$/../perf-demo/src/main/java/org/lassal/performance/perfdemo/command/HelpCommand.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="57">
-          <caret line="3" lean-forward="true" selection-start-line="3" selection-end-line="3" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../perf-demo/src/test/java/org/lassal/performance/perfdemo/service/FileServiceTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="171">
-          <caret line="20" column="67" lean-forward="true" selection-start-line="20" selection-start-column="4" selection-end-line="20" selection-end-column="67" />
+          <caret line="3" selection-start-line="3" selection-end-line="3" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/../perf-demo/src/main/java/org/lassal/performance/perfdemo/command/MeasurePerformanceCommand.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="74">
+        <state relative-caret-position="114">
           <caret line="7" selection-start-line="7" selection-end-line="7" selection-end-column="77" />
           <folding>
             <element signature="imports" expanded="true" />
@@ -770,19 +810,167 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/../perf-demo/src/test/java/org/lassal/performance/perfdemo/service/FileServiceTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="171">
+          <caret line="20" column="67" selection-start-line="20" selection-start-column="4" selection-end-line="20" selection-end-column="67" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../perf-demo/src/main/java/org/lassal/performance/perfdemo/PerfDemoConfiguration.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="114">
+          <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../perf-demo/src/main/java/org/lassal/performance/perfdemo/command/DoWebApiCallCommand.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="361">
+          <caret line="20" column="52" selection-start-line="20" selection-start-column="52" selection-end-line="20" selection-end-column="52" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/../perf-demo/src/main/java/org/lassal/performance/perfdemo/command/CommandBuilder.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="214">
-          <caret line="37" column="29" selection-start-line="37" selection-start-column="29" selection-end-line="37" selection-end-column="29" />
+        <state relative-caret-position="176">
+          <caret line="30" selection-start-line="30" selection-end-line="30" />
+          <folding>
+            <element signature="e#2218#2219#0" expanded="true" />
+            <element signature="e#2259#2260#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../perf-demo/src/main/java/org/lassal/performance/perfdemo/service/CNPJService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="171">
+          <caret line="9" column="3" lean-forward="true" selection-start-line="9" selection-start-column="3" selection-end-line="9" selection-end-column="63" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../perf-demo/src/test/java/org/lassal/performance/perfdemo/service/WebRESTServiceTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="208">
+          <caret line="34" column="52" selection-start-line="34" selection-start-column="52" selection-end-line="34" selection-end-column="52" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../perf-demo/src/main/java/org/lassal/performance/perfdemo/service/WebRESTService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="466">
+          <caret line="34" selection-start-line="34" selection-end-line="34" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../perf-demo/src/main/java/org/lassal/performance/perfdemo/PerfDemoApplication.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="418">
+          <caret line="37" lean-forward="true" selection-start-line="37" selection-end-line="37" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#867#868#0" expanded="true" />
+            <element signature="e#928#929#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../perf-demo/src/main/java/org/lassal/performance/perfdemo/PerfDemoOptions.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="493">
+          <caret line="51" column="8" selection-start-line="51" selection-start-column="8" selection-end-line="51" selection-end-column="8" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#1430#1431#0" expanded="true" />
+            <element signature="e#1459#1460#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
   </component>
   <component name="masterDetails">
     <states>
+      <state key="ArtifactsStructureConfigurable.UI">
+        <settings>
+          <artifact-editor />
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="FacetStructureConfigurable.UI">
+        <settings>
+          <last-edited>No facets are configured</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="GlobalLibrariesConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="JdkListConfigurable.UI">
+        <settings>
+          <last-edited>JDK-10</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ModuleStructureConfigurable.UI">
+        <settings>
+          <last-edited>perf-demo</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+                <option value="0.6" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
       <state key="ProjectJDKs.UI">
         <settings>
           <last-edited>JDK_1.8.0</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ProjectLibrariesConfigurable.UI">
+        <settings>
+          <last-edited>Maven: antlr:antlr:2.7.7</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>

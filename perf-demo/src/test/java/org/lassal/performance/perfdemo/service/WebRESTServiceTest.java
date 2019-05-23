@@ -5,6 +5,7 @@ import org.junit.runner.RunWith;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.context.annotation.ComponentScan;
 import org.springframework.test.context.junit4.SpringRunner;
@@ -21,6 +22,9 @@ public class WebRESTServiceTest {
     @Autowired
     private WebRESTService service;
 
+    @Value( "${perfdemo.webapiserver.url}" )
+    private String webApiURL;
+
     @Test
     public void callRESTWebAPI() {
 
@@ -28,7 +32,7 @@ public class WebRESTServiceTest {
 
         long start = System.nanoTime();
 
-        this.service.callRESTWebAPI(numberOfHits, false);
+        this.service.callRESTWebAPI(this.webApiURL, numberOfHits, false);
 
         long end = System.nanoTime();
 

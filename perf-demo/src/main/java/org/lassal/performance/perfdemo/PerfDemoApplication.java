@@ -2,6 +2,7 @@ package org.lassal.performance.perfdemo;
 
 import org.lassal.performance.perfdemo.command.*;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.boot.ApplicationArguments;
 import org.springframework.boot.ApplicationRunner;
 import org.springframework.boot.CommandLineRunner;
@@ -19,6 +20,9 @@ public class PerfDemoApplication implements ApplicationRunner {
 	@Autowired
 	private CommandBuilder commandBuilder;
 
+	@Value( "${perfdemo.webapiserver.url}" )
+	private String defaultWebApiUrl;
+
 	private List<Command> commands = new ArrayList<Command>();
 
 	public static void main(String[] args) {
@@ -30,28 +34,15 @@ public class PerfDemoApplication implements ApplicationRunner {
 	@Override
 	public void run(ApplicationArguments args) throws Exception {
 
-		int numberOfExecutions = 1000;
+		PerfDemoOptions options = new PerfDemoOptions(args, this.defaultWebApiUrl);
 
-		if(args.containsOption("n")){
-			List<String> values = args.getOptionValues("n");
-
-			if(values.size() > 0){
-
-				try{
-					numberOfExecutions = Integer.parseInt(values.get(0));
-				}
-				catch (NumberFormatException nfe){
-					numberOfExecutions = 1000;
-				}
-
-			}
-		}
+		this.commandBuilder.setWebApiUrl(options.getWebApiUrl());
 
 		if(args.containsOption("test")){
             List<String> tests = args.getOptionValues("test");
 
             for(String test : tests){
-            	Command cmd = this.commandBuilder.createPerformanceCommand(test, numberOfExecutions);
+            	Command cmd = this.commandBuilder.createPerformanceCommand(test, options.getNumberOfExecutions());
 
             	if(cmd != null){
             		this.commands.add(cmd);
@@ -73,4 +64,5 @@ public class PerfDemoApplication implements ApplicationRunner {
 			cmd.execute();
 		}
 	}
+
 }

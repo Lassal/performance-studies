@@ -6,17 +6,19 @@ import org.springframework.beans.factory.annotation.Autowired;
 public class DoWebApiCallCommand  extends MeasurePerformanceCommand{
 
     private WebRESTService service;
+    private String webApiUrl;
 
-    public DoWebApiCallCommand(int numberOfExecutions, WebRESTService service){
+    public DoWebApiCallCommand(String webApiUrl, int numberOfExecutions, WebRESTService service){
         this.setNumberOfExecutions(numberOfExecutions);
         this.service = service;
+        this.webApiUrl = webApiUrl;
     }
 
 
 
     @Override
     protected void executePerformanceTest() {
-        this.service.callRESTWebAPI(this.getNumberOfExecutions(), false);
+        this.service.callRESTWebAPI(this.webApiUrl, this.getNumberOfExecutions(), false);
     }
 
     @Override
